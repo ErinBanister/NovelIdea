@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genre_array">
+        <item>@string/unk</item>
+        <item>@string/drama</item>
+        <item>@string/scifi</item>
+        <item>@string/humor</item>
+        <item>@string/fantasy</item>
+        <item>@string/adventure</item>
+        <item>@string/mystery</item>
+        <item>@string/romance</item>
+        <item>@string/horror</item>
+        <item>@string/nonfiction</item>
+    </string-array>
+    <string-array name="missing_value">
+        <item>@string/missingNothing</item>
+        <item>@string/missingTitle</item>
+        <item>@string/missingAuthor</item>
+        <item>@string/missingPrice</item>
+        <item>@string/missingSupplier</item>
+        <item>@string/missingSupplierPhone</item>
+    </string-array>
+</resources>

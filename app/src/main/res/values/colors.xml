@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#686A78</color>
+    <color name="colorPrimaryDark">#282133</color>
+    <color name="colorAccent">#9DB295</color>
+    <color name="colorLight">#8498A8</color>
+    <color name="colorWhite">#e3ded3</color>
+    <color name="textDark">#282133</color>
+    <color name="textMed">#2B3D4D</color>
+    <color name="saleButton">#A43E56</color>
+</resources>

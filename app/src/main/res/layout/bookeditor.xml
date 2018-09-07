@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLight"
+    android:padding="@dimen/activity_margin">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bookInfoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bookInfo"
+            style="@style/editLabelStyle"
+            android:paddingBottom="@dimen/imagePadding"
+            android:text="@string/bookInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelTitle"
+            style="@style/bookLabelStyle"
+            android:text="@string/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bookInfo" />
+
+        <EditText
+            android:id="@+id/title"
+            style="@style/editTextStyle"
+            android:hint="@string/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bookInfo" />
+
+        <TextView
+            android:id="@+id/labelAuthor"
+            style="@style/bookLabelStyle"
+            android:text="@string/author"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelTitle" />
+
+        <EditText
+            android:id="@+id/author"
+            style="@style/editTextStyle"
+            android:hint="@string/author"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/labelPrice"
+            style="@style/bookLabelStyle"
+            android:text="@string/price"
+            app:layout_constraintTop_toBottomOf="@id/labelAuthor" />
+
+        <EditText
+            android:id="@+id/price"
+            style="@style/editTextStyle"
+            android:hint="@string/price"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/author" />
+
+        <TextView
+            android:id="@+id/labelQty"
+            style="@style/bookLabelStyle"
+            android:text="@string/qty"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelPrice" />
+
+        <LinearLayout
+            android:id="@+id/qtyLayout"
+            android:layout_width="@dimen/dataFieldWidth"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/price">
+
+            <Button
+                android:id="@+id/minusOneQty"
+                style="@style/qtyButtonStyle"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                tools:text="@string/qty" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/plusOneQty"
+                style="@style/qtyButtonStyle"
+                android:text="+" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/genreLabel"
+            style="@style/bookLabelStyle"
+            android:text="@string/genreInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelQty" />
+
+        <Spinner
+            android:id="@+id/genreSpinner"
+            android:layout_width="@dimen/dataFieldWidth"
+            android:layout_height="@dimen/spinnerHeight"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/qtyLayout" />
+
+        <TextView
+            android:id="@+id/labelSupplier"
+            style="@style/bookLabelStyle"
+            android:text="@string/supplier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/genreLabel" />
+
+        <EditText
+            android:id="@+id/supplier"
+            style="@style/editTextStyle"
+            android:hint="@string/supplier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/genreSpinner" />
+
+        <TextView
+            android:id="@+id/labelPhone"
+            style="@style/bookLabelStyle"
+            android:text="@string/phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelSupplier" />
+
+        <EditText
+            android:id="@+id/supplierPhone"
+            style="@style/editTextStyle"
+            android:hint="@string/supplier_phone"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/supplier" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/callSupplierButton"
+            style="@style/editorSupplierButtonStyle"
+            android:text="@string/callSupplier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/supplierPhone"
+            app:layout_constraintTop_toBottomOf="@id/supplierPhone" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

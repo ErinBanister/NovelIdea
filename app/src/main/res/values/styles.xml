@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:layout_width">@dimen/dataFieldWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:padding">@dimen/editorPadding</item>
+    </style>
+
+    <style name="editLabelStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/editLabelTextSize</item>
+        <item name="android:textColor">@color/textDark</item>
+        <item name="android:padding">@dimen/editorPadding</item>
+    </style>
+
+    <style name="bookLabelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/editorPadding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/labelTextSize</item>
+        <item name="android:textColor">@color/textDark</item>
+
+
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:background">@color/saleButton</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/buttonText</item>
+        <item name="android:layout_margin">@dimen/activity_margin</item>
+    </style>
+
+    <style name="bookStyle">
+        <item name="android:layout_width">@dimen/bookDimen</item>
+        <item name="android:layout_height">@dimen/bookDimen</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:padding">@dimen/listpadding</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/colorLight</item>
+    </style>
+
+    <style name="listItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/textDark</item>
+        <item name="android:padding">@dimen/listpadding</item>
+    </style>
+
+    <style name="qtyButtonStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/editorButtonTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:backgroundTint">@color/saleButton</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="editorSupplierButtonStyle" parent="qtyButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/supplierButtonHeight</item>
+        <item name="android:layout_margin">@dimen/editorPadding</item>
+    </style>
+
+
+</resources>
